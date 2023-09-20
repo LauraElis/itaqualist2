@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body{
+    background-color: #fcf5ce;
+  }
+
+  .cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    box-sizing: border-box;
+    background: #FFE071;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+
+
+
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+    
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.casinha {
+    width: 50px;
+    height: auto;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+
+}
+
+main {
+    margin-top: 100px;
+    
+}
+
+
+.caixas-gas {
+    width: 100%;
+    height: auto;
+}
+
+.fotos-gas {
+    width: 100%;
+    height: auto;
+}
+

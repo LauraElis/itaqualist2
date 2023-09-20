@@ -1,0 +1,271 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body{
+    background-color: #fcf5ce;
+  }
+
+  .cabecalho {
+    width: 100vw;
+    height: 100px;
+    box-sizing: border-box;
+    background: #FFE071;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+
+
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-top: 20px;
+    
+}
+
+.menu {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.menu .menu-faketrigger {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu .menu-faketrigger:checked~ul {
+    background-color: white;
+
+
+}
+
+.menu .menu-linhas {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+
+
+}
+
+.menu .menu-linhas span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #575555;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-linhas span {
+    background-color: #232323;
+}
+
+.menu .menu-faketrigger:checked ~ .menu-linhas span:nth-child(1) {
+    transform-origin: 0% 100%;
+    transform: rotate(45deg) scaleX(1.25);         ; 
+
+}
+
+.menu .menu-faketrigger:checked ~ .menu-linhas span:nth-child(2) {
+    opacity: 0;
+    
+}
+
+.menu .menu-faketrigger:checked ~ .menu-linhas span:nth-child(3) {
+    transform-origin: 0% 0%;
+    transform: rotate(-45deg) scaleX(1.25);
+    
+}
+
+.menu ul {
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    padding-top: 100px;
+    background-color: white;
+    margin-left: -1800px;
+    transition: all ease .3s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif ;
+
+}
+
+.menu-faketrigger:checked ~ ul {
+    margin-left: 0;
+
+}
+
+.menu ul li {
+    padding: 10px 30px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 22px;
+    transition: all ease .3s;
+}
+
+.menu ul li a:hover {
+    color:#978f8f
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faixa-azul {
+    width: 100vw;
+    height: 10px;
+    background-color: #140092;
+}
+
+.faixa-vermelha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 340px;
+    height: 55px;
+    background-color: #D60000;
+    border: 4px solid black ;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.texto-faixa-vermelha {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+.carrosel {
+    width: 340px;
+    height: auto;
+    outline: 0px solid rgb(63, 78, 212);
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+    margin: 0px auto;
+    border: 4px solid black;
+
+}
+
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 2720px;
+    height: 334px;
+
+}
+
+.foto-carrosel {
+    width: 255px;
+    height: auto;
+}
+
+.carrosel li {
+    position: relative;
+    animation: slide 45s infinite ease-out;
+}
+
+@keyframes slide {
+    0%{left: 0px;}
+
+    50%{left: -977px;}
+
+    100%{left: -1955px;}
+}
+
+
+.desenho {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: -510px;
+}
+
+.vermais {
+    margin-top: 20px;
+    
+}
+
+
+.texto-vermais{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #140092;
+
+}
+
+
+footer {
+    width: 100vw;
+    height: 250px;
+    background-color: #D60000;
+    margin-top: 22px;
+}
+
+.nossasredes {
+    font-size: 22px;
+    margin-left: 129px;
+    font-family: 'Poppins', sans-serif;
+    color: #fcf5ce;
+    padding-top: 30px;
+}
+
+.icones {
+    width: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.icon {
+    width: 55px;
+    height: auto;
+}
+
+.direitos{
+    font-family: 'Poppins', sans-serif;
+    color: #fcf5ce;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+
+.alertajs {
+    width: 80%;
+    height: auto;
+    background-color: #FFE071;
+}

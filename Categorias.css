@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  body{
+    background-color: #fcf5ce;
+  }
+
+  .cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    box-sizing: border-box;
+    background: #FFE071;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+
+
+
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-top: 20px;
+    
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.casinha {
+    width: 50px;
+    height: auto;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+
+}
+
+main {
+    margin-top: 115px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.opcoes-categorias{
+    width: 70%;
+    height: 60px;
+    background-color: rebeccapurple;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px rebeccapurple;
+}
+
+.texto-categorias {
+    font-family:'Poppins', sans-serif;
+    color: white;
+}
